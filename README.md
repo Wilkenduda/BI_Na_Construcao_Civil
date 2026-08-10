@@ -53,7 +53,7 @@ Foram selecionadas fontes técnicas e acadêmicas relacionadas a Business Intell
 2. [ANÁLISE DO POWER BI COMO FERRAMENTA DE GERENCIAMENTO](./ANÁLISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 3. [Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
 4. [Aplicação do Business Intelligence and Analytics na construção civil](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
-5. [BIM Guia completo]([https://www.youtube.com/...](https://sienge.com.br/blog/tudo-sobre-bim/))
+5. [BIM Guia completo]([https://www.youtube.com/...](https://sienge.com.br/blog/tudo-sobre-bim/)
 ---
 
 # Engenharia de Prompts e "Cicatrizes"
