@@ -49,7 +49,7 @@ O assistente foi projetado para atuar como uma ferramenta complementar aos estud
 
 Foram selecionadas fontes técnicas e acadêmicas relacionadas a Business Intelligence, Power BI e gestão da Construção Civil. A base de conhecimento do NotebookLM é composta por materiais adicionais utilizados durante a exploração do tema. Abaixo são apresentadas as principais fontes utilizadas como referência para o desenvolvimento do projeto.
 
-1. **PDF Power BI Fundamentals**
+1. [Power BI Fundamentals](./power-bi-fundamentals.zip)
 2. **PDF Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO**
 3. **PDF Gerenciamento de Obras**
 4. **PDF Aplicação do Power BI em gerenciamento de projetos**
