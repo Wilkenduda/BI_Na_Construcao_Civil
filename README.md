@@ -884,301 +884,848 @@ A resposta apresentou adequadamente a função do Data Warehouse e sua relação
 > - Dashboard
 > - Tcc
 > - live
-
-# Miniguia de Estudo
-
-## Business Intelligence aplicado à Construção Civil
-
-### 1. Objetivo da Miniguia
-
-Esta miniguia consolida os principais conhecimentos desenvolvidos ao longo do projeto **BI para Construção Civil**, utilizando o NotebookLM como ferramenta de aprendizagem e aprofundamento.
-
-A partir da análise de materiais técnicos e da elaboração de prompts estratégicos, foram exploradas as relações entre **Business Intelligence, gestão de obras, análise de dados, ETL, Data Warehouse, dashboards e BIM**.
-
-O objetivo não é apenas apresentar conceitos, mas demonstrar como essas tecnologias podem ser relacionadas a situações reais da Construção Civil e utilizadas como suporte à tomada de decisão.
+l
 
 ---
 
-## 2. Resumo Estruturado dos Conhecimentos
+## Relatório Final e Miniguia de Estudo
 
-### 2.1. Dados de uma obra como matéria-prima para o BI
+## 1. Resumo Estruturado do Assunto
 
-Uma obra gera uma grande quantidade de informações durante seu planejamento e execução. Entretanto, **nem todo dado possui o mesmo valor para uma solução de BI**.
+### 1.1. Introdução
 
-Os dados mais relevantes são aqueles que podem ser transformados em indicadores, análises e informações capazes de apoiar decisões.
+A construção civil passa por um processo de **transformação digital**, substituindo gradualmente métodos tradicionais de gerenciamento por soluções baseadas em dados e tecnologia.
 
-Entre os principais grupos identificados estão:
+Nesse contexto, o **Business Intelligence (BI)** surge como uma abordagem para organizar, integrar e analisar informações, permitindo que gestores e profissionais da construção tomem decisões com maior rapidez, precisão e segurança.
 
-- **Planejamento e orçamento:** quantitativos, custos previstos, orçamento analítico, cronograma físico-financeiro e Curva ABC;
-- **Execução física:** medições, avanço físico e serviços executados;
-- **Custos:** notas fiscais, pagamentos, custos realizados e fluxo financeiro;
-- **Produtividade:** horas trabalhadas, equipes, produção e utilização de equipamentos;
-- **Suprimentos:** pedidos, recebimentos, consumo e estoque de materiais;
-- **Cronograma:** datas, prazos, marcos e desvios;
-- **Dados técnicos:** quantitativos e informações provenientes de modelos BIM;
-- **Dados contratuais:** contratos, aditivos e marcos contratuais.
+O **Microsoft Power BI** destaca-se como uma das principais ferramentas utilizadas para transformar dados provenientes de diferentes fontes em **relatórios, indicadores e dashboards interativos**.
 
-O principal aprendizado foi perceber que **o valor do BI não está simplesmente na quantidade de dados disponíveis, mas na capacidade de relacioná-los para responder perguntas relevantes da gestão**.
+Na construção civil, essas soluções podem ser aplicadas ao acompanhamento de:
 
-Por exemplo, o custo da mão de obra isoladamente apresenta uma informação limitada. Quando relacionado ao avanço físico da obra, pode gerar um indicador de produtividade e revelar um possível desvio.
+* Custos;
+* Orçamentos;
+* Cronogramas;
+* Avanço físico;
+* Produtividade;
+* Compras e suprimentos;
+* Relatórios fotográficos;
+* Contratações;
+* Desempenho de projetos;
+* Indicadores de desempenho.
 
----
-
-### 2.2. O dashboard como ferramenta de tomada de decisão
-
-Um dashboard de gestão de obras deve apresentar as informações de forma que o gestor consiga identificar rapidamente **o que está acontecendo, onde existe um problema e onde deve concentrar sua atenção**.
-
-Entre os indicadores e informações explorados estão:
-
-- Custo previsto × realizado;
-- Avanço físico;
-- Prazo decorrido e prazo restante;
-- Desvios de custo;
-- Desvios de prazo;
-- Curva S física e financeira;
-- Curva ABC;
-- Produtividade das equipes;
-- Utilização de equipamentos;
-- Recebimento de materiais;
-- Indicadores relacionados ao planejamento.
-
-Um ponto importante identificado durante o estudo foi que **um dashboard não deve simplesmente reunir gráficos**.
-
-Sua estrutura deve seguir uma lógica de priorização, destacando informações relevantes para a tomada de decisão e permitindo o aprofundamento dos dados quando necessário.
-
-Assim, uma estrutura pode partir de uma **visão geral da obra** e permitir posteriormente análises mais detalhadas por etapa, serviço, equipe, fornecedor ou período.
+> **Princípio central do BI:** não é possível gerenciar adequadamente aquilo que não é medido e controlado.
 
 ---
 
-### 2.3. BI não começa no dashboard
+## 2. O que é Business Intelligence?
 
-Um dos principais aprendizados do projeto foi compreender que **a criação do dashboard representa apenas uma das etapas de uma solução de BI**.
+**Business Intelligence (BI)** é uma disciplina que reúne **softwares, aplicações, metodologias e processos** destinados a apoiar a tomada de decisões.
 
-Quando uma construtora possui dados descentralizados, inconsistentes e atualizados manualmente, simplesmente criar uma visualização sobre essas informações não resolve o problema.
+Seu objetivo não é simplesmente armazenar dados, mas transformar dados brutos em **informações úteis para a gestão e para a tomada de decisões**.
 
-Pelo contrário: **um dashboard construído sobre dados ruins pode produzir informações visualmente organizadas, mas incorretas**.
+### Dados × Informação
 
-Antes da visualização, é necessário trabalhar aspectos como:
+| Conceito         | Característica                                            | Exemplo                                                   |
+| ---------------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| **Dado**         | Registro bruto, sem necessariamente possuir contexto      | Valor de uma nota fiscal                                  |
+| **Informação**   | Dado organizado e contextualizado                         | Custo acumulado de materiais comparado ao orçamento       |
+| **Conhecimento** | Interpretação da informação para compreender uma situação | Identificação de um aumento anormal no custo de materiais |
+| **Decisão**      | Ação tomada com base no conhecimento obtido               | Renegociar preços ou alterar fornecedor                   |
 
-- Organização das fontes;
-- Qualidade dos dados;
-- Padronização;
-- Tratamento de inconsistências;
-- Integração das informações;
-- Definição das regras de negócio;
-- Modelagem dos dados;
-- Criação dos indicadores.
+Portanto, o BI busca transformar o fluxo:
 
-Isso leva ao conceito de **ETL**, que representa uma etapa fundamental para transformar dados brutos em informações adequadas para análise.
+**Dados → Informação → Análise → Conhecimento → Decisão → Ação**
 
 ---
 
-## 3. ETL aplicado à Construção Civil
+## 3. Uso da Informação nos Diferentes Níveis Organizacionais
 
-O processo de **ETL — Extract, Transform, Load (Extração, Transformação e Carga)** permite integrar dados provenientes de diferentes fontes.
+A informação possui diferentes finalidades de acordo com o nível hierárquico da organização.
 
-Em uma construtora, essas fontes podem incluir:
+### 3.1. Nível Operacional
 
-- Excel;
-- ERP;
-- Sistemas de planejamento;
-- Registros de medições;
-- Dados de campo;
-- Modelos BIM;
-- Arquivos CSV;
-- Documentos e outras bases utilizadas pela empresa.
+Possui foco no **curto prazo**.
 
-### Extração
+É responsável pelo acompanhamento das atividades diárias e pelo registro das operações.
 
-Consiste em obter os dados das diferentes fontes utilizadas pela organização.
+**Exemplos na construção civil:**
 
-### Transformação
+* Registro de materiais;
+* Medições;
+* Lançamento de despesas;
+* Controle de mão de obra;
+* Registro de atividades executadas.
 
-É a etapa de preparação dos dados. Pode envolver:
+### 3.2. Nível de Conhecimento
 
-- Limpeza;
-- Remoção de duplicidades;
-- Tratamento de valores nulos;
-- Padronização de nomenclaturas;
-- Ajuste de unidades;
-- Correção de formatos;
-- Organização das hierarquias;
-- Transformação da estrutura das tabelas.
+Está relacionado ao tratamento e utilização das informações para apoiar atividades técnicas e administrativas.
 
-### Carga
+Pode envolver:
 
-Após o tratamento, os dados são disponibilizados em uma estrutura adequada para análise e utilização no modelo de BI.
+* Análise de dados;
+* Organização de informações;
+* Apoio aos profissionais;
+* Identificação de padrões.
 
-O estudo também permitiu compreender que **decisões tomadas durante o ETL influenciam diretamente a confiabilidade dos indicadores apresentados no dashboard**.
+### 3.3. Nível Administrativo
 
----
+Possui foco no **médio prazo**.
 
-## 4. Data Warehouse na Construção Civil
+É utilizado para decisões táticas e acompanhamento do desempenho.
 
-O **Data Warehouse (DW)** pode funcionar como um repositório centralizado para integrar informações provenientes de diferentes áreas e sistemas de uma construtora.
+**Exemplos:**
 
-Em vez de cada setor trabalhar isoladamente com suas próprias planilhas e informações, os dados podem ser organizados em uma estrutura integrada.
+* Comparação entre planejado e realizado;
+* Análise de custos;
+* Acompanhamento da produtividade;
+* Controle de cronogramas;
+* Monitoramento de indicadores.
 
-Um exemplo estudado foi a integração entre:
+### 3.4. Nível Estratégico
 
-**Orçamento → Planejamento → Custos → Medições → Execução**
+Possui foco no **longo prazo**.
 
-A **EAP (Estrutura Analítica do Projeto)** pode exercer um papel importante nesse processo, funcionando como elemento de ligação entre diferentes informações da obra.
+Utiliza informações consolidadas para apoiar decisões relacionadas aos objetivos da empresa.
 
-Por exemplo, uma mesma etapa de estrutura pode estar relacionada:
+**Exemplos:**
 
-- Ao custo previsto no orçamento;
-- À atividade correspondente no cronograma;
-- Ao custo realizado no ERP;
-- À medição executada;
-- À produtividade da equipe.
-
-Essa integração permite que o BI deixe de analisar informações isoladas e passe a investigar **relações entre diferentes dimensões da obra**.
+* Planejamento estratégico;
+* Análise de desempenho de empreendimentos;
+* Previsões;
+* Análise de tendências;
+* Definição de metas.
 
 ---
 
-## 5. BIM + BI
+# 4. OLTP e Data Warehouse
 
-Um dos aprofundamentos realizados durante o projeto foi a relação entre **Building Information Modeling (BIM)** e **Business Intelligence (BI)**.
+Uma das diferenças fundamentais em BI está entre os sistemas utilizados para **registrar operações** e aqueles utilizados para **analisar informações**.
 
-O BIM pode fornecer informações técnicas e quantitativas estruturadas sobre a edificação, enquanto o BI pode integrar essas informações a outras fontes e transformá-las em análises gerenciais.
+## 4.1. OLTP — Online Transaction Processing
 
-Entre os dados provenientes do BIM que podem ser utilizados em análises estão:
+O **OLTP** é voltado para as operações do dia a dia.
 
-- Quantitativos;
-- Volumes;
-- Áreas;
-- Materiais;
-- Especificações;
-- Informações temporais relacionadas ao BIM 4D;
-- Informações de custos relacionadas ao BIM 5D.
+Suas principais características são:
 
-Esses dados podem ser relacionados a informações reais da execução.
+* Registro detalhado das transações;
+* Atualizações constantes;
+* Foco operacional;
+* Necessidade de consistência dos dados;
+* Suporte às atividades diárias.
 
-### Exemplo
+Exemplos:
 
-**BIM:** quantidade prevista de concreto  
-↓  
-**Execução:** quantidade efetivamente utilizada  
-↓  
-**BI:** comparação entre previsto e realizado  
-↓  
-**Análise:** identificação de possível desperdício ou desvio  
-↓  
-**Decisão:** investigação e ação corretiva.
+* Sistemas ERP;
+* Sistemas financeiros;
+* Sistemas de compras;
+* Sistemas de controle de operações.
 
-Dessa forma, BIM e BI podem atuar de maneira complementar: **o BIM fornece informações estruturadas sobre o empreendimento, enquanto o BI amplia a capacidade de análise dessas informações quando integradas a outras fontes.**
+## 4.2. Data Warehouse — DW
 
----
+O **Data Warehouse** é um repositório destinado à análise.
 
-## 6. BI aplicado ao controle de custos
+Ele reúne dados históricos e atuais provenientes de diferentes fontes, organizando-os para facilitar consultas e análises.
 
-O controle de custos foi um dos principais campos de aplicação explorados.
+Suas características incluem:
 
-O BI pode integrar informações como:
+* Centralização;
+* Dados históricos;
+* Estabilidade;
+* Organização por assuntos;
+* Integração de diferentes fontes;
+* Suporte à análise e à tomada de decisão.
 
-- Orçamento;
-- Custos previstos;
-- Notas fiscais;
-- Medições;
-- Pagamentos;
-- Consumo de materiais;
-- Mão de obra;
-- Equipamentos;
-- Indicadores econômicos.
+### Comparação
 
-A análise não precisa se limitar ao tradicional **Previsto × Realizado**.
-
-É possível investigar a **causa dos desvios**.
-
-Por exemplo:
-
-**Custo acima do previsto**  
-↓  
-O preço do material aumentou?  
-↓  
-A produtividade diminuiu?  
-↓  
-Houve desperdício?  
-↓  
-O quantitativo consumido foi superior ao previsto?  
-↓  
-Houve atraso e aumento dos custos indiretos?
-
-Esse tipo de investigação demonstra o potencial do BI como **ferramenta de suporte à decisão**, e não apenas como ferramenta de visualização.
+| OLTP                    | Data Warehouse                 |
+| ----------------------- | ------------------------------ |
+| Foco operacional        | Foco analítico                 |
+| Registra transações     | Analisa informações            |
+| Atualização constante   | Dados mais estáveis            |
+| Grande nível de detalhe | Dados organizados para análise |
+| Curto prazo             | Histórico e tendências         |
+| Sistemas do dia a dia   | Suporte à decisão              |
 
 ---
 
-# 7. Glossário dos Principais Conceitos
+# 5. O problema das informações fragmentadas
 
-| Conceito | Significado |
-|---|---|
-| **BI** | Business Intelligence. Conjunto de processos e tecnologias utilizados para transformar dados em informações que apoiam a tomada de decisão. |
-| **Dashboard** | Painel visual utilizado para apresentar indicadores e informações de forma interativa. |
-| **KPI** | Indicador-chave de desempenho utilizado para acompanhar objetivos e resultados. |
-| **ETL** | Processo de Extração, Transformação e Carga dos dados. |
-| **Power Query** | Ferramenta utilizada para conexão, transformação e preparação de dados. |
-| **DAX** | Linguagem utilizada para criação de cálculos e medidas em modelos do Power BI. |
-| **Data Warehouse** | Repositório estruturado para integração e armazenamento de dados destinados principalmente à análise. |
-| **Star Schema** | Modelo de dados em formato de estrela, formado principalmente por tabelas fato e tabelas dimensão. |
-| **Tabela Fato** | Tabela que registra eventos ou ocorrências, como custos, medições e vendas. |
-| **Tabela Dimensão** | Tabela que fornece contexto aos dados, como obra, fornecedor, serviço ou calendário. |
-| **EAP** | Estrutura Analítica do Projeto, utilizada para decompor e organizar o escopo da obra. |
-| **Curva S** | Representação gráfica do avanço acumulado físico ou financeiro ao longo do tempo. |
-| **Curva ABC** | Método de classificação que permite identificar os itens de maior impacto financeiro. |
-| **Drill-down** | Recurso que permite aprofundar uma informação, passando de uma visão geral para níveis mais detalhados. |
-| **Storytelling** | Organização das informações visuais de maneira lógica para facilitar interpretação e tomada de decisão. |
-| **BIM** | Building Information Modeling, metodologia baseada na criação e gestão de informações digitais de um empreendimento. |
-| **BIM 4D** | Integração do modelo BIM com informações relacionadas ao tempo e planejamento. |
-| **BIM 5D** | Integração do BIM com informações relacionadas a custos e orçamento. |
-| **Power BI** | Plataforma utilizada para análise, modelagem e visualização de dados. |
-| **Previsto × Realizado** | Comparação entre aquilo que foi planejado e aquilo que efetivamente ocorreu. |
-| **Indicador de produtividade** | Métrica utilizada para relacionar recursos empregados e produção obtida. |
+Um dos grandes problemas da gestão tradicional é a **fragmentação das informações**.
 
----
+Em uma obra, os dados podem estar distribuídos entre:
 
-# 8. Prompts Reutilizáveis para Futuras Revisões
+* Planilhas Excel;
+* Documentos;
+* E-mails;
+* Relatórios impressos;
+* Fotografias;
+* Sistemas diferentes;
+* Bancos de dados;
+* Serviços em nuvem.
 
-A ideia desta seção é transformar os aprendizados obtidos durante o projeto em modelos de prompts que possam ser reutilizados posteriormente.
+Essa fragmentação dificulta a obtenção de uma visão completa do empreendimento.
 
-### Prompt 1 — Aprofundamento de um conceito
+O gestor pode precisar procurar informações em vários locais antes de conseguir responder perguntas simples, como:
 
-> Explique o conceito de **[CONCEITO]** no contexto de Business Intelligence aplicado à Construção Civil. Não apresente apenas uma definição. Relacione o conceito a situações práticas de planejamento, execução ou gestão de obras e explique como ele pode contribuir para a tomada de decisão.
+* Quanto já foi gasto?
+* Qual o avanço da obra?
+* O custo está dentro do orçamento?
+* Quais etapas estão atrasadas?
+* Qual fornecedor apresenta maior impacto financeiro?
 
-### Prompt 2 — Aplicação prática
-
-> Imagine uma construtora que possui **[SITUAÇÃO/PROBLEMA]**. Analise como uma solução de Business Intelligence poderia ser utilizada para compreender o problema. Identifique quais dados seriam necessários, quais indicadores poderiam ser construídos, quais análises poderiam ser realizadas e quais decisões poderiam ser apoiadas pelos resultados.
-
-### Prompt 3 — Investigação de desvios
-
-> Imagine que uma obra apresenta um desvio de **[CUSTO/PRAZO/PRODUTIVIDADE]**. Analise quais dados deveriam ser cruzados para identificar a possível causa do problema. Estruture a análise desde a identificação do desvio até as possíveis ações corretivas.
-
-### Prompt 4 — BIM + BI
-
-> Analise como os dados provenientes de um modelo BIM poderiam ser integrados a uma solução de Business Intelligence. Identifique quais informações poderiam ser extraídas, com quais outras fontes elas poderiam ser cruzadas e quais indicadores ou análises poderiam ser produzidos para apoiar a gestão da obra.
-
-### Prompt 5 — Qualidade dos dados
-
-> Considere uma construtora que possui dados descentralizados, inconsistentes e atualizados manualmente. Analise quais problemas de qualidade de dados precisam ser tratados antes da criação de dashboards e explique como ETL, modelagem de dados e Data Warehouse poderiam contribuir para esse processo.
-
-### Prompt 6 — Dashboard orientado à decisão
-
-> Imagine que você precisa desenvolver um dashboard para gestão de uma obra. Não apenas liste indicadores. Defina quais informações deveriam aparecer na visão geral, quais deveriam ficar em níveis detalhados, quais perguntas cada indicador deveria responder e como o dashboard poderia apoiar decisões de gestão.
-
-### Prompt 7 — Análise crítica
-
-> Analise criticamente a seguinte aplicação de Business Intelligence na Construção Civil: **[DESCREVA A APLICAÇÃO]**. Identifique seus benefícios, limitações, dados necessários, possíveis riscos de interpretação e condições necessárias para que os resultados sejam confiáveis.
+O BI procura solucionar esse problema por meio da **integração e centralização das informações**.
 
 ---
 
-# 9. Síntese Final do Aprendizado
+# 6. ETL — Preparação dos Dados
 
-O principal aprendizado desenvolvido neste projeto foi compreender que **Business Intelligence aplicado à Construção Civil não se resume à criação de dashboards no Power BI**.
+Antes de apresentar os dados em um dashboard, é necessário prepará-los.
 
-O processo começa na **qualidade e organização dos dados**, passa pela **integração e transformação das informações**, pela **modelagem e definição dos indicadores** e finalmente chega à visualização e interpretação dos resultados.
+O processo **ETL (Extract, Transform, Load)** pode ser entendido como:
 
-A aplicação na Construção Civil torna-se especialmente relevante porque uma obra reúne informações de diferentes áreas — planejamento, orçamento, suprimentos, execução, custos, produtividade e projetos. Quando essas informações permanecem isoladas, parte importante do potencial de análise é perdida.
+### 1. Extract — Extração
 
-A integração entre **ETL, Data Warehouse, BIM e ferramentas de BI** permite transformar dados fragmentados em informações capazes de responder perguntas relevantes para a gestão.
+Obtenção dos dados a partir de diferentes fontes.
+
+### 2. Transform — Transformação
+
+Tratamento dos dados para adequá-los às regras do negócio.
+
+Pode envolver:
+
+* Correção;
+* Padronização;
+* Limpeza;
+* Conversão;
+* Organização.
+
+### 3. Load — Carregamento
+
+Envio dos dados tratados para a estrutura utilizada na análise.
+
+### Fluxo simplificado
+
+**Fontes de dados → Extração → Transformação → Carregamento → Análise → Dashboard**
+
+---
+
+# 7. Power BI aplicado à Construção Civil
+
+O **Power BI** é uma plataforma que permite integrar dados provenientes de diferentes fontes e transformá-los em visualizações interativas.
+
+Entre as fontes utilizadas em projetos de construção podem estar:
+
+* Excel;
+* Access;
+* Microsoft Project;
+* Bancos de dados;
+* Serviços em nuvem;
+* Relatórios;
+* Dados financeiros;
+* Fotografias.
+
+## 7.1. Power Query
+
+O **Power Query** é utilizado principalmente para:
+
+* Conectar diferentes fontes;
+* Importar dados;
+* Limpar informações;
+* Transformar tabelas;
+* Padronizar dados;
+* Preparar os dados para análise.
+
+---
+
+# 8. Dashboards na Gestão de Obras
+
+O dashboard é uma interface visual que apresenta informações relevantes para o acompanhamento de um empreendimento.
+
+Em vez de analisar diversas planilhas separadamente, o gestor pode visualizar os principais indicadores em um único ambiente.
+
+### Possíveis informações de um dashboard de obras
+
+* Avanço físico;
+* Custos;
+* Orçamento;
+* Cronograma;
+* Compras;
+* Produtividade;
+* Contratações;
+* Indicadores financeiros;
+* Relatórios fotográficos.
+
+Uma das principais vantagens é a possibilidade de **interagir com os dados**, realizando análises mais detalhadas conforme a necessidade.
+
+---
+
+# 9. Benefícios Estratégicos do Power BI na Construção
+
+## 9.1. Centralização
+
+Integra informações que estavam espalhadas em diferentes arquivos e sistemas.
+
+## 9.2. Comunicação
+
+Reduz a necessidade de troca constante de arquivos e e-mails.
+
+## 9.3. Visualização
+
+Transforma dados complexos em gráficos, indicadores e dashboards.
+
+## 9.4. Monitoramento
+
+Permite acompanhar o desempenho do projeto de maneira mais rápida.
+
+## 9.5. Tomada de decisão
+
+Facilita a identificação de problemas e tendências.
+
+## 9.6. Acesso
+
+O Power BI pode ser utilizado em diferentes plataformas, incluindo computadores e dispositivos móveis.
+
+---
+
+# 10. Power BI e a Relação entre Engenheiro e Cliente
+
+Uma das aplicações relevantes do Power BI na construção civil está na melhoria da comunicação entre a equipe técnica e o cliente.
+
+No modelo tradicional, o cliente pode depender de:
+
+* E-mails;
+* Relatórios periódicos;
+* Reuniões;
+* Arquivos enviados manualmente;
+* Atualizações preparadas pela equipe.
+
+Com um dashboard centralizado, o cliente pode ter acesso mais direto às informações.
+
+Isso proporciona:
+
+* Maior transparência;
+* Acompanhamento do progresso;
+* Acesso a informações financeiras;
+* Visualização de fotografias;
+* Acompanhamento do cronograma;
+* Maior autonomia.
+
+Assim, o Power BI não atua somente como uma ferramenta de análise, mas também como uma **ferramenta de comunicação e transparência**.
+
+---
+
+# 11. Estudos de Caso
+
+## 11.1. Quinta da Baroneza
+
+O estudo analisou a utilização do Power BI para gerenciamento de **cronogramas e orçamentos**.
+
+Foram integradas diferentes fontes de informação:
+
+* Excel;
+* Access;
+* Microsoft Project;
+* Serviços em nuvem;
+* Fotografias;
+* Informações de suprimentos;
+* Orçamentos.
+
+### Resultados observados
+
+Os engenheiros destacaram:
+
+* Facilidade de comunicação;
+* Redução do tempo gasto na elaboração de relatórios;
+* Maior praticidade.
+
+Os clientes destacaram:
+
+* Facilidade de utilização;
+* Intuitividade;
+* Transparência;
+* Acompanhamento em tempo real;
+* Possibilidade de acesso por dispositivos móveis.
+
+---
+
+## 11.2. Incorporadora de Goiânia
+
+Outro estudo analisou a aplicação de BI em uma incorporadora responsável por um empreendimento com **462 lotes**.
+
+Foram avaliadas informações relacionadas a:
+
+* Vendas;
+* Custos;
+* Cronogramas;
+* Administração do empreendimento.
+
+A usabilidade do sistema foi analisada por meio da metodologia **PSSUQ**.
+
+### Dimensões avaliadas
+
+**SysUse — Utilidade do sistema**
+
+Avalia se o sistema é considerado útil pelos usuários.
+
+**InfoQual — Qualidade da informação**
+
+Avalia a qualidade das informações apresentadas.
+
+**IntQual — Qualidade da interface**
+
+Avalia a qualidade da interface utilizada pelo usuário.
+
+O estudo indicou que a ferramenta apresentou **boa qualidade das informações e uma interface adequada**, contribuindo para uma administração mais fácil do empreendimento.
+
+---
+
+# 12. Riscos e Cuidados na Implementação
+
+A implementação de BI não depende apenas da tecnologia.
+
+É necessário estabelecer processos e responsabilidades para garantir a qualidade dos dados.
+
+## 12.1. Consistência dos caminhos dos arquivos
+
+Uma precaução importante é manter os arquivos nas localizações esperadas pelo Power BI.
+
+Alterar:
+
+* Nome do arquivo;
+* Nome da pasta;
+* Localização;
+* Estrutura das pastas;
+
+pode interromper a conexão com a fonte de dados e comprometer as atualizações do relatório.
+
+## 12.2. Qualidade dos dados
+
+A automação do dashboard não elimina a necessidade de inserir dados corretamente.
+
+Se a informação original estiver errada, o dashboard também apresentará informações incorretas.
+
+> **Automatizar a análise não significa automatizar a responsabilidade pela qualidade do dado.**
+
+## 12.3. Killer Queries
+
+Consultas analíticas muito complexas realizadas diretamente em sistemas operacionais podem consumir muitos recursos.
+
+Essas consultas são chamadas de **Killer Queries**.
+
+Uma solução de BI busca evitar esse problema utilizando estruturas próprias para análise, como:
+
+* Data Warehouse;
+* OLAP;
+* Cubos analíticos.
+
+---
+
+# 13. Camada Semântica
+
+A **camada semântica** tem como objetivo apresentar os dados utilizando a linguagem compreendida pelos usuários do negócio.
+
+Isso significa transformar estruturas técnicas em informações que façam sentido para:
+
+* Engenheiros;
+* Gestores;
+* Clientes;
+* Controllers;
+* Administradores.
+
+Por exemplo, em vez de apresentar apenas códigos técnicos ou nomes de tabelas, o sistema deve apresentar conceitos reconhecidos pelo negócio, como:
+
+* Custo acumulado;
+* Avanço físico;
+* Orçamento;
+* Desvio;
+* Produtividade.
+
+A tecnologia deve se adaptar à linguagem do negócio, e não o contrário.
+
+---
+
+# 14. Da Gestão Tradicional à Construção 4.0
+
+A evolução da gestão da construção civil pode ser observada desde os gráficos desenvolvidos por **Harry L. Gantt**, no século XIX, até as tecnologias atuais.
+
+Os métodos de Gantt representaram um avanço porque permitiram visualizar graficamente o andamento das atividades.
+
+Com a evolução tecnológica, essa lógica passou por diferentes etapas até chegar à **Construção 4.0**.
+
+## Construção 4.0
+
+A Construção 4.0 representa a aplicação dos conceitos da **Quarta Revolução Industrial** ao setor da construção.
+
+Entre os conceitos relacionados estão:
+
+* Digitalização;
+* Sistemas ciberfísicos;
+* Big Data;
+* Analytics;
+* Automação;
+* Integração de informações;
+* Tomada de decisão baseada em dados.
+
+Nesse contexto, ferramentas de BI permitem transformar grandes volumes de dados em informações úteis para o gerenciamento.
+
+---
+
+# 15. Importância Estratégica do BI
+
+A principal contribuição do BI para a construção civil é a **redução da incerteza**.
+
+Uma gestão baseada somente em percepção ou informações incompletas aumenta o risco de decisões inadequadas.
+
+Já uma gestão orientada por dados permite:
+
+1. Medir o desempenho;
+2. Identificar desvios;
+3. Comparar planejado e realizado;
+4. Identificar tendências;
+5. Compreender problemas;
+6. Tomar decisões com maior embasamento;
+7. Acompanhar os resultados das decisões.
+
+Assim, o BI transforma os dados da obra em um recurso estratégico.
+
+---
+
+# 16. Principais Conceitos Aprendidos
+
+Ao consolidar os conteúdos estudados, os principais aprendizados podem ser resumidos em cinco pilares:
+
+### Pilar 1 — Dados
+
+Os dados são a matéria-prima da análise.
+
+### Pilar 2 — Integração
+
+Dados provenientes de diferentes fontes precisam ser organizados e integrados.
+
+### Pilar 3 — Tratamento
+
+Dados precisam ser limpos, padronizados e transformados.
+
+### Pilar 4 — Visualização
+
+Dashboards e indicadores tornam as informações mais acessíveis.
+
+### Pilar 5 — Decisão
+
+O objetivo final do BI é apoiar decisões melhores e mais rápidas.
+
+> **BI não começa no dashboard. O dashboard é apenas a parte visível de um processo que começa na qualidade, organização e integração dos dados.**
+
+---
+
+# 17. Glossário de Principais Conceitos
+
+| Termo                                      | Definição                                                                                                                                               |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BI — Business Intelligence**             | Conjunto de conceitos, ferramentas e processos utilizados para transformar dados em informações úteis para apoiar decisões.                             |
+| **BAM — Business Activity Monitoring**     | Solução que utiliza indicadores operacionais de curto prazo para apoiar decisões no nível operacional.                                                  |
+| **Big Data e Analytics**                   | Tecnologias relacionadas à análise de grandes volumes de dados para apoiar decisões e melhorar processos.                                               |
+| **CPM — Corporate Performance Management** | Abordagem voltada ao gerenciamento do desempenho corporativo por meio de informações, indicadores, planejamento, previsões e orçamentos.                |
+| **Dashboard**                              | Interface visual que apresenta informações e indicadores importantes para apoiar o acompanhamento e a tomada de decisões.                               |
+| **Data Mart — DM**                         | Estrutura derivada de um Data Warehouse, direcionada a uma área, departamento ou assunto específico.                                                    |
+| **Data Mining**                            | Processo de análise destinado a identificar padrões e relações que podem não ser facilmente percebidos pelos analistas.                                 |
+| **Data Warehouse — DW**                    | Repositório centralizado de dados históricos e atuais, organizado para facilitar análises.                                                              |
+| **Dado**                                   | Registro bruto que ainda não foi necessariamente contextualizado ou interpretado.                                                                       |
+| **ETL**                                    | Processo de Extração, Transformação e Carregamento de dados provenientes de diferentes fontes.                                                          |
+| **ERP — Enterprise Resource Planning**     | Sistema utilizado para integrar e gerenciar processos e operações de uma organização.                                                                   |
+| **Informação**                             | Dado organizado e contextualizado de forma que possa ser utilizado para análise e compreensão.                                                          |
+| **KPI — Key Performance Indicator**        | Indicador utilizado para acompanhar o desempenho de determinado processo em relação a objetivos ou metas.                                               |
+| **Killer Query**                           | Consulta analítica complexa que pode consumir muitos recursos de um sistema operacional e comprometer seu funcionamento.                                |
+| **OLAP — Online Analytical Processing**    | Tecnologia destinada à análise multidimensional de dados, permitindo diferentes perspectivas de consulta.                                               |
+| **OLTP — Online Transaction Processing**   | Sistema voltado ao registro e processamento das operações e transações do dia a dia.                                                                    |
+| **Power BI**                               | Plataforma da Microsoft utilizada para conectar, transformar, analisar e visualizar dados.                                                              |
+| **Power Query**                            | Ferramenta utilizada para conectar fontes, extrair, limpar e transformar dados.                                                                         |
+| **PSSUQ**                                  | Questionário utilizado para avaliar a satisfação e a usabilidade de sistemas, considerando utilidade, qualidade da informação e qualidade da interface. |
+| **Semantic Layer — Camada Semântica**      | Camada que traduz estruturas técnicas de dados para uma linguagem compreensível pelos usuários do negócio.                                              |
+| **SysUse**                                 | Dimensão do PSSUQ relacionada à utilidade percebida do sistema.                                                                                         |
+| **InfoQual**                               | Dimensão do PSSUQ relacionada à qualidade das informações apresentadas.                                                                                 |
+| **IntQual**                                | Dimensão do PSSUQ relacionada à qualidade da interface do sistema.                                                                                      |
+| **Construção 4.0**                         | Aplicação dos conceitos da Quarta Revolução Industrial ao setor da construção civil.                                                                    |
+
+---
+
+# 18. Prompts Reutilizáveis para Futuras Revisões
+
+Os prompts abaixo foram estruturados para serem reutilizados no **NotebookLM, ChatGPT ou outras ferramentas de IA** durante futuras revisões.
+
+## Prompt 1 — Revisão Geral
+
+```text
+Atue como professor especialista em Business Intelligence aplicado à Construção Civil.
+
+Utilize exclusivamente os materiais fornecidos como fonte.
+
+Faça uma revisão estruturada sobre:
+1. Conceito de Business Intelligence;
+2. Diferença entre dados e informações;
+3. OLTP e Data Warehouse;
+4. ETL;
+5. Power Query;
+6. Power BI;
+7. Dashboards;
+8. Construção 4.0;
+9. Aplicações de BI na gestão de obras.
+
+Para cada tópico:
+- explique o conceito de forma objetiva;
+- relacione-o à Construção Civil;
+- apresente um exemplo prático de aplicação em uma obra;
+- destaque o principal ponto que devo memorizar.
+
+Finalize com um resumo dos 10 pontos mais importantes.
+```
+
+---
+
+## Prompt 2 — BI Aplicado à Gestão de Obras
+
+```text
+Analise como o Business Intelligence pode ser aplicado à gestão de uma obra.
+
+Considere especialmente:
+- custos;
+- orçamento;
+- cronograma;
+- avanço físico;
+- produtividade;
+- suprimentos;
+- mão de obra;
+- relatórios fotográficos;
+- indicadores de desempenho.
+
+Para cada área, informe:
+1. quais dados podem ser coletados;
+2. como esses dados podem ser tratados;
+3. quais indicadores podem ser criados;
+4. como o Power BI poderia apresentar essas informações;
+5. qual decisão gerencial poderia ser apoiada pelo indicador.
+
+Organize a resposta em uma tabela.
+```
+
+---
+
+## Prompt 3 — Identificação de Dados com Valor para BI
+
+```text
+Analise os dados de uma obra e identifique quais possuem maior valor para Business Intelligence.
+
+Classifique os dados em:
+- financeiros;
+- temporais;
+- operacionais;
+- técnicos;
+- produtividade;
+- suprimentos;
+- qualidade.
+
+Para cada grupo:
+- indique exemplos de dados;
+- indique possíveis indicadores;
+- explique quais decisões poderiam ser tomadas a partir deles.
+
+Priorize informações que possam revelar desvios, tendências, riscos ou oportunidades de melhoria.
+```
+
+---
+
+## Prompt 4 — Estruturação de Dashboard
+
+```text
+Atue como especialista em Power BI e gestão de obras.
+
+Projete a estrutura de um dashboard para acompanhamento de uma obra.
+
+Organize o dashboard em:
+1. visão geral;
+2. custos;
+3. planejamento e cronograma;
+4. avanço físico;
+5. produtividade;
+6. suprimentos;
+7. indicadores de desempenho.
+
+Para cada seção, indique:
+- indicadores necessários;
+- dados utilizados;
+- tipo de gráfico recomendado;
+- filtros importantes;
+- decisões que podem ser apoiadas.
+
+Explique também como evitar excesso de informações e priorizar os indicadores realmente relevantes.
+```
+
+---
+
+## Prompt 5 — BI e Controle de Custos
+
+```text
+Explique como utilizar Business Intelligence para melhorar o controle de custos de uma obra.
+
+Considere:
+- orçamento;
+- notas fiscais;
+- contratos;
+- quantitativos;
+- materiais;
+- mão de obra;
+- fornecedores;
+- avanço físico;
+- cronograma.
+
+Mostre como integrar esses dados e quais indicadores poderiam ser utilizados para identificar:
+- desvios de orçamento;
+- aumento de custos;
+- baixa produtividade;
+- problemas com fornecedores;
+- diferenças entre planejado e realizado.
+
+Finalize apresentando exemplos de decisões que poderiam ser tomadas com base nos resultados.
+```
+
+---
+
+## Prompt 6 — BIM + BI na Construção Civil
+
+```text
+Explique como BIM e Business Intelligence podem trabalhar juntos na Construção Civil.
+
+Considere que:
+- BIM pode fornecer informações geométricas, espaciais, quantitativas, de planejamento e custos;
+- BI pode integrar, tratar, analisar e visualizar dados.
+
+Explique:
+1. quais dados podem ser obtidos do BIM;
+2. como esses dados podem ser utilizados pelo BI;
+3. quais indicadores podem ser criados;
+4. como o Power BI poderia apresentar essas informações;
+5. quais decisões poderiam ser apoiadas.
+
+Apresente um exemplo prático de integração BIM + BI em uma obra.
+```
+
+---
+
+## Prompt 7 — Estudo Ativo
+
+```text
+Quero revisar Business Intelligence e Power BI aplicados à Construção Civil.
+
+Crie um teste com 15 questões, misturando:
+- múltipla escolha;
+- verdadeiro ou falso;
+- associação de conceitos;
+- situações-problema;
+- questões discursivas.
+
+Não apresente as respostas imediatamente.
+
+Depois que eu responder, corrija cada questão, explique meus erros e identifique quais assuntos preciso revisar.
+```
+
+---
+
+## Prompt 8 — Simulação de Situação Profissional
+
+```text
+Crie uma situação prática de uma obra que esteja apresentando problemas de custo, prazo e produtividade.
+
+Forneça dados fictícios suficientes para que eu possa analisar o problema utilizando conceitos de Business Intelligence.
+
+Peça para que eu:
+1. identifique os dados relevantes;
+2. escolha os indicadores;
+3. proponha um dashboard;
+4. identifique os possíveis problemas;
+5. proponha decisões gerenciais.
+
+Depois que eu responder, avalie minha análise como se você fosse um gestor de planejamento e controle de obras.
+```
+
+---
+
+# 19. Mapa Mental do Conteúdo
+
+```text
+BUSINESS INTELLIGENCE NA CONSTRUÇÃO CIVIL
+│
+├── Dados
+│   ├── Dados brutos
+│   ├── Informação
+│   ├── Conhecimento
+│   └── Decisão
+│
+├── Arquitetura
+│   ├── OLTP
+│   ├── ETL
+│   ├── Data Warehouse
+│   ├── Data Mart
+│   └── OLAP
+│
+├── Power BI
+│   ├── Power Query
+│   ├── Integração de dados
+│   ├── Modelagem
+│   ├── Dashboards
+│   └── Visualização
+│
+├── Gestão de Obras
+│   ├── Custos
+│   ├── Orçamento
+│   ├── Cronograma
+│   ├── Avanço físico
+│   ├── Produtividade
+│   ├── Suprimentos
+│   └── Indicadores
+│
+├── Gestão Estratégica
+│   ├── KPI
+│   ├── BAM
+│   ├── CPM
+│   └── Data Mining
+│
+├── Comunicação
+│   ├── Engenheiro
+│   ├── Gestor
+│   └── Cliente
+│
+└── Construção 4.0
+    ├── Digitalização
+    ├── Big Data
+    ├── Analytics
+    ├── Sistemas ciberfísicos
+    └── Decisão baseada em dados
+```
+
+---
+
+# 20. Conclusão
+
+O estudo demonstra que o **Business Intelligence vai muito além da criação de dashboards**. Seu verdadeiro valor está na capacidade de transformar dados dispersos em informações confiáveis capazes de apoiar decisões.
+
+Na Construção Civil, essa capacidade é especialmente relevante devido à grande quantidade de informações geradas durante um empreendimento, envolvendo custos, cronogramas, materiais, mão de obra, produtividade, contratos e avanço físico.
+
+O **Power BI** atua como uma ferramenta importante nesse processo ao permitir a integração de diferentes fontes, o tratamento dos dados e a criação de visualizações interativas.
+
+Entretanto, a tecnologia sozinha não garante bons resultados. É necessário garantir:
+
+* Qualidade dos dados;
+* Padronização;
+* Organização das fontes;
+* Processos bem definidos;
+* Responsabilidade dos usuários;
+* Estrutura adequada para análise;
+* Linguagem compreensível para o negócio.
+
+A evolução da gestão de obras, desde os gráficos de Gantt até a **Construção 4.0**, demonstra uma mudança importante: a informação deixou de ser apenas um registro do que aconteceu e passou a ser um recurso estratégico para compreender o presente, antecipar problemas e orientar decisões.
+
+Dessa forma, o BI aplicado à Construção Civil pode contribuir para uma gestão **mais integrada, transparente, mensurável e orientada por dados**.
+
+> **Dados organizados geram informação. Informação analisada gera conhecimento. Conhecimento aplicado gera melhores decisões.**
 
 Assim, o BI pode deixar de ser apenas um mecanismo de **"mostrar o que aconteceu"** e passar a apoiar uma gestão capaz de **identificar desvios, investigar suas causas, antecipar problemas e tomar decisões baseadas em dados**.
