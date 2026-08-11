@@ -51,11 +51,18 @@ O assistente foi projetado para atuar como uma ferramenta complementar aos estud
 Foram selecionadas fontes técnicas e acadêmicas relacionadas a Business Intelligence, Power BI e gestão da Construção Civil. A base de conhecimento do NotebookLM é composta por materiais adicionais utilizados durante a exploração do tema. Abaixo são apresentadas as principais fontes utilizadas como referência para o desenvolvimento do projeto.
 
 1. [Documentação de introdução do Power BI](./power-bi-fundamentals.zip)
-2. [Análise do Power BI como ferramenta de gerenciamento de obras ](./ANÁLISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
+2. [Análise do Power BI como ferramenta de gerenciamento de obras](./AN%C3%81LISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 3. [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
-4. [Aplicação do Business Intelligence and Analytics na construção civil: estudo 
-de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
+4. [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 5. [BIM: guia completo da modelagem à implementação na Construção Civil](https://sienge.com.br/blog/tudo-sobre-bim/)
+6. [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
+7. [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
+8. [Excel Intermediário e Introdução ao Power BI](./EXCEL%20INTERMEDIARIO.pdf)
+9. [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
+10. [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
+11. [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
+12. [Video: Como praticar Power BI na construção Civil](https://www.youtube.com/watch?v=7R41zHYjX-g)
+13. [O que é Data Warehouse?](https://www.sap.com/brazil/resources/what-is-a-data-warehouse)
 ---
 
 # Engenharia de Prompts e "Cicatrizes"
@@ -115,15 +122,15 @@ Os prompts foram refinados progressivamente a partir das respostas obtidas, cons
 
 ### Fontes
 
-> Análise do Power BI como ferramenta de gerenciamento de projetos
+> [Análise do Power BI como ferramenta de gerenciamento de obras](./AN%C3%81LISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 
-> Vídeo: Como praticar Power BI na Construção Civil
+> [Video: Como praticar Power BI na construção Civil](https://www.youtube.com/watch?v=7R41zHYjX-g)
 >
-> Aplicação do Business Intelligence e Analytics na Construção Civil
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Curso Gerenciamento de Obras
+> [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
 >
-> Tecnologia como apoio ao gerenciamento
+> [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
 
 ### Problema identificado na resposta
 
@@ -153,7 +160,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 
 > A análise de Business Intelligence (BI) na construção civil transforma dados brutos em inteligência estratégica, permitindo que gestores substituam a intuição por decisões baseadas em fatos. Abaixo, detalho as categorias principais, estabelecendo o ciclo entre o dado, o indicador e a tomada de decisão.
 >
-> **6. Dados de Planejamento e Orçamentação**
+> **1. Dados de Planejamento e Orçamentação**
 >
 > **Informações extraídas:** Quantitativos de serviços e insumos, custos unitários (CPU) e o orçamento analítico detalhado.
 >
@@ -163,7 +170,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 >
 > **Decisão de gestão:** Priorização de negociações estratégicas com fornecedores dos itens Classe A para proteger o orçamento e garantir a margem de lucro.
 >
-> **7. Dados de Prazos e Cronograma**
+> **2. Dados de Prazos e Cronograma**
 >
 > **Informações extraídas:** Datas de início e término de tarefas, interdependências (caminho crítico) e marcos contratuais ("milestones").
 >
@@ -173,7 +180,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 >
 > **Decisão de gestão:** Aceleração de frentes de serviço atrasadas por meio da alocação de equipes extras ou turnos adicionais para evitar multas contratuais.
 >
-> **8. Dados de Custos e Execução Financeira**
+> **3. Dados de Custos e Execução Financeira**
 >
 > **Informações extraídas:** Notas fiscais lançadas no ERP, medições de empreiteiros, fluxo de caixa analítico e variações de índices como o INCC.
 >
@@ -183,7 +190,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 >
 > **Decisão de gestão:** Readequação do fluxo de desembolso, antecipação de compras de insumos para evitar altas futuras e aplicação de aditivos contratuais quando necessário.
 >
-> **9. Dados de Produtividade e Recursos**
+> **4. Dados de Produtividade e Recursos**
 >
 > **Informações extraídas:** Histogramas de mão de obra e equipamentos, registros do Diário de Obras (RDO) e apropriações de campo.
 >
@@ -193,7 +200,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 >
 > **Decisão de gestão:** Dimensionamento correto da equipe para as próximas etapas, evitando equipes subdimensionadas (que geram atrasos) ou superdimensionadas (que geram custos desnecessários).
 >
-> **10. Dados de Execução Física e Materiais**
+> **5. Dados de Execução Física e Materiais**
 >
 > **Informações extraídas:** Volumes de materiais recebidos vs. quantitativos extraídos de modelos BIM ou desenhos técnicos.
 >
@@ -207,15 +214,15 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 
 ### Fontes utilizadas
 
-> AcadBi Modulo 1
+> [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
 >
-> Live Power BI para construção civil
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Tecnologia como apoio ao planejamento
+> [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
 >
-> Aplicação do bi and analytics
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Tcc aplicação do power bi
+> [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
 
 ---
 
@@ -229,7 +236,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 
 > A estruturação de um dashboard de Business Intelligence para o acompanhamento de uma obra deve ser pensada para transformar dados brutos em insights estratégicos, permitindo uma gestão ágil e fundamentada em fatos. Com base nos documentos, um dashboard eficaz é composto por três pilares principais: o processo de tratamento de dados, a seleção de indicadores-chave (KPIs) e a aplicação de técnicas de visualização e storytelling.
 >
-> **12. Estrutura de Dados e Modelagem (Back-end)**
+> **1. Estrutura de Dados e Modelagem (Back-end)**
 >
 > Antes da visualização, o dashboard requer uma base sólida:
 >
@@ -237,7 +244,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 > * **Modelagem de Dados:** Recomenda-se o uso do esquema em estrela (Star Schema), onde uma "tabela fato" (com registros de eventos como custos ou medições) é conectada a "tabelas dimensão" (como calendário, lista de serviços ou responsáveis).
 > * **Medidas DAX:** São criadas fórmulas para cálculos complexos, como acumulados de custo, percentuais de desvio e tendências.
 >
-> **13. Conteúdo e Indicadores Sugeridos (Visualizações)**
+> **2. Conteúdo e Indicadores Sugeridos (Visualizações)**
 >
 > Um dashboard de obra costuma ser dividido em telas ou áreas temáticas para facilitar a navegação:
 >
@@ -256,7 +263,7 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 >   * Histogramas de Mão de Obra e Equipamentos: Gráficos de barras que mostram a mobilização semanal de trabalhadores (prevista vs. real), ajudando a identificar equipes subdimensionadas.
 >   * Indicadores de Recebimento de Materiais: Comparação entre o quantitativo extraído do modelo BIM/Revit e o que já foi efetivamente entregue no canteiro.
 >
-> **14. Design e Storytelling (Front-end)**
+> **3. Design e Storytelling (Front-end)**
 >
 > A apresentação visual deve conduzir o olhar do gestor para o que realmente importa:
 >
@@ -265,23 +272,23 @@ Diante disso, o prompt foi refinado para investigar não apenas quais dados pode
 > * **Interatividade:** O uso de segmentadores de dados (filtros) permite que o usuário selecione períodos específicos, obras ou frentes de serviço, atualizando todos os gráficos instantaneamente.
 > * **Design Profissional:** Utilização de ferramentas como o Figma para criar planos de fundo que organizam e separam visualmente cada indicador.
 >
-> **15. Acesso e Mobilidade**
+> **4. Acesso e Mobilidade**
 >
 > A estrutura final deve ser publicada no Power BI Online (SaaS) para compartilhamento com as partes interessadas. Isso permite que engenheiros e clientes acessem o dashboard via Power BI Mobile diretamente de smartphones ou tablets no canteiro de obras, eliminando a dependência de relatórios físicos ou e-mails.
 
 ### Fontes
 
-> Aplicação BI e Analitycs
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Anélise do power bi como ferramenta
+> [Análise do Power BI como ferramenta de gerenciamento de obras](./AN%C3%81LISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 >
-> Dashboard com storytelling
+> [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
 >
-> Power bi fundamentals
+> [Documentação de introdução do Power BI](./power-bi-fundamentals.zip)
 >
-> Live power bi para construção civil
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Tcc aplicação do power bi
+> [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
 
 ### Problema identificado na resposta
 
@@ -350,21 +357,21 @@ A resposta apresentou uma estrutura técnica abrangente, contemplando desde o tr
 
 ### Fontes utilizadas
 
-> Aplicação BI e Analitycs
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Anélise do power bi como ferramenta
+> [Análise do Power BI como ferramenta de gerenciamento de obras](./AN%C3%81LISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 >
-> Dashboard com storytelling
+> [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
 >
-> Power bi fundamentals
+> [Documentação de introdução do Power BI](./power-bi-fundamentals.zip)
 >
-> Live power bi para construção civil
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Tcc aplicação do power bi
+> [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
 >
-> Tecnologia como apoio
+> [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
 >
-> Acadbi
+> [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
 
 ---
 
@@ -384,41 +391,41 @@ A resposta apresentou uma estrutura técnica abrangente, contemplando desde o tr
 >
 > Para que a construtora gere informações confiáveis, é necessário tratar a base tecnológica e os processos de gestão antes de chegar à camada visual. Abaixo, detalho os problemas a serem tratados e as etapas necessárias:
 >
-> **6. Problemas que devem ser tratados antes das visualizações**
+> **1. Problemas que devem ser tratados antes das visualizações**
 >
 > * **Obtenção Caótica da Informação:** A descentralização (dados em planilhas diversas, e-mails e anotações) gera o que as fontes chamam de "obtenção caótica", onde não se sabe onde o dado está ou qual o seu nível de consistência. É preciso primeiro unificar os dados em um repositório único (como um Data Warehouse) para evitar discussões sobre qual fonte é a correta em reuniões de decisão.
 > * **Inconsistências na Fonte:** O Power BI não corrige dados corrompidos ou que não condizem com a realidade; a correção deve ocorrer na fonte (como o ERP ou a planilha original). Erros de preenchimento manual e duplicidades precisam ser sanados para garantir a integridade.
 > * **Processos Manuais e Obsoletos:** O uso exclusivo de planilhas manuais gera riscos de perda de informação e falhas de comunicação. A gestão deve migrar para um modelo onde a coleta de dados no canteiro de obras seja parte de um processo bem definido e, preferencialmente, automatizado.
 >
-> **7. Etapas para gerar informações confiáveis (Ciclo de BI)**
+> **2. Etapas para gerar informações confiáveis (Ciclo de BI)**
 >
 > Para transformar esse cenário, a construtora deve seguir estas etapas técnicas e gerenciais:
 >
-> **8. Extração, Transformação e Carga (ETL):** Utilizando ferramentas como o Power Query, deve-se conectar às diversas fontes (Excel, bancos de dados, PDFs), realizar a limpeza dos dados (remover colunas inúteis, filtrar nulos, ajustar tipos de dados) e padronizá-los.
+> **3. Extração, Transformação e Carga (ETL):** Utilizando ferramentas como o Power Query, deve-se conectar às diversas fontes (Excel, bancos de dados, PDFs), realizar a limpeza dos dados (remover colunas inúteis, filtrar nulos, ajustar tipos de dados) e padronizá-los.
 >
-> **9. Modelagem de Dados:** Após o tratamento, as tabelas devem ser organizadas. Recomenda-se o uso do Star Schema (esquema em estrela), conectando "tabelas fato" (eventos como medições e custos) a "tabelas dimensão" (contexto como calendário, lista de obras ou fornecedores).
+> **4. Modelagem de Dados:** Após o tratamento, as tabelas devem ser organizadas. Recomenda-se o uso do Star Schema (esquema em estrela), conectando "tabelas fato" (eventos como medições e custos) a "tabelas dimensão" (contexto como calendário, lista de obras ou fornecedores).
 >
-> **10. Criação de Medidas e Indicadores (DAX):** Antes de criar gráficos, é necessário definir as regras de negócio através de fórmulas (linguagem DAX). Isso garante que indicadores como "Custo por m²" ou "Desvio de Prazo" sejam calculados de forma idêntica para todos os projetos.
+> **5. Criação de Medidas e Indicadores (DAX):** Antes de criar gráficos, é necessário definir as regras de negócio através de fórmulas (linguagem DAX). Isso garante que indicadores como "Custo por m²" ou "Desvio de Prazo" sejam calculados de forma idêntica para todos os projetos.
 >
-> **11. Implementação de uma Camada Semântica:** É essencial que a informação "sirva" aos usuários em uma linguagem de negócios clara, para que todos na construtora entendam o significado de cada indicador sem necessidade de intérpretes.
+> **6. Implementação de uma Camada Semântica:** É essencial que a informação "sirva" aos usuários em uma linguagem de negócios clara, para que todos na construtora entendam o significado de cada indicador sem necessidade de intérpretes.
 >
-> **12. Criação do Dashboard com Storytelling:** Somente nesta última etapa os dados são visualizados. Deve-se usar técnicas de Storytelling para organizar os gráficos de forma lógica (seguindo o padrão de leitura em Z), destacando o que é mais importante para a tomada de decisão rápida.
+> **7. Criação do Dashboard com Storytelling:** Somente nesta última etapa os dados são visualizados. Deve-se usar técnicas de Storytelling para organizar os gráficos de forma lógica (seguindo o padrão de leitura em Z), destacando o que é mais importante para a tomada de decisão rápida.
 >
 > Em resumo: O dashboard é apenas a "ponta do iceberg". O valor real do Business Intelligence reside na qualidade do tratamento dos dados (ETL) e na confiabilidade da fonte, permitindo que o gestor deixe de "andar com os olhos vendados" e passe a agir com base em fatos integrados.
 
 ### Fontes
 
-> Aplicação bi e analytics
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Acadbi
+> [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
 >
-> O que é data Warehouse
+> [O que é Data Warehouse?](https://www.sap.com/brazil/resources/what-is-a-data-warehouse)
 >
-> Tecnologia como apoio ao planejamento
+> [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
 >
-> Dashboard com storytelling
+> [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
 >
-> Live power bi para construção civil
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 
 ---
 
@@ -460,13 +467,13 @@ A resposta apresentou uma estrutura técnica abrangente, contemplando desde o tr
 
 ### Fontes
 
-> BIM guia completo
+> [BIM: guia completo da modelagem à implementação na Construção Civil](https://sienge.com.br/blog/tudo-sobre-bim/)
 >
-> Análise do power bi como ferramenta de gerenciamento
+> [Análise do Power BI como ferramenta de gerenciamento de obras](./AN%C3%81LISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 >
-> Live power bi para construção
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Vídeo como praticar
+> [Video: Como praticar Power BI na construção Civil](https://www.youtube.com/watch?v=7R41zHYjX-g)
 
 ### Problema identificado na resposta
 
@@ -536,19 +543,19 @@ A resposta apresentou diversas possibilidades de integração entre BIM e BI, po
 
 ### Fontes utilizadas
 
-> BIM guia completo
+> [BIM: guia completo da modelagem à implementação na Construção Civil](https://sienge.com.br/blog/tudo-sobre-bim/)
 >
-> Tcc aplicações
+> [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
 >
-> Power bi fundamentals
+> [Documentação de introdução do Power BI](./power-bi-fundamentals.zip)
 >
-> Aplicações bi e analytics
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Análise do power bi como ferramenta de gerenciamento
+> [Análise do Power BI como ferramenta de gerenciamento de obras](./AN%C3%81LISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 >
-> Live power bi para construção
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Dashboard com storytelling
+> [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
 
 ---
 
@@ -580,7 +587,7 @@ A resposta apresentou diversas possibilidades de integração entre BIM e BI, po
 > * **Análise "Previsto vs. Realizado":** Comparação imediata entre o custo orçado e o desembolso real, destacando o saldo (positivo ou negativo) de cada etapa da obra.
 > * **Curva S Financeira:** Gráfico que mostra a evolução do gasto acumulado ao longo do tempo, permitindo visualizar tendências de estouro orçamentário meses antes de elas se tornarem críticas.
 > * **Curva ABC Interativa:** Identificação visual (através de recursos como o Treemap) dos itens que representam o maior peso financeiro (Classe A), permitindo focar o controle onde o impacto é maior.
-> * **Custo Unitário e Parâmetros:** Extração do custo real por metro quadrado (m²) ou por unidade de serviço (ex: r$/m³ de concreto), servindo de base para comparativos entre diferentes obras.
+> * **Custo Unitário e Parâmetros:** Extração do custo real por metro quadrado (m²) ou por unidade de serviço (ex: R$/m³ de concreto), servindo de base para comparativos entre diferentes obras.
 >
 > **3. Apoio à identificação de desvios e tomada de decisão**
 >
@@ -596,17 +603,17 @@ A resposta apresentou diversas possibilidades de integração entre BIM e BI, po
 
 ### Fontes
 
-> Acadbi
+> [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
 >
-> Curso de gerenciamento de obras
+> [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
 >
-> Tecnologia como apoio ao planejamento
+> [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
 >
-> Tcc aplicação
+> [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
 >
-> Live power bi
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Aplicação bi e analytics
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 
 ### Problema identificado na resposta
 
@@ -640,7 +647,7 @@ A resposta apresentou diversos indicadores e recursos que podem ser utilizados n
 > A análise visual e integrada desses dados transforma a percepção do gestor, fundamentando decisões rápidas para mitigar danos e recuperar o lucro previsto:
 >
 > * **Negociação com Fornecedores:** Com o auxílio da Curva ABC Interativa, o gestor foca seus esforços de negociação nos itens de "Classe A" (que representam a maior fatia do custo). Se o BI mostra que o preço do aço é o principal ofensor, a construtora pode buscar compras em escala ou antecipação de pedidos para proteger o orçamento contra novas altas.
-> * **Alteração de Métodos Executivos:** Se os indicadores de produtividade demonstram que o método atual é ineficiente ou gera muito desperdício, o BI fornece subsídios para simular e adotar novas metodologias construtivas (como o uso de pré-moldados ou alteração de fornecedores de sistemas fôrmas) antes que o erro se propague para as próximas etapas.
+> * **Alteração de Métodos Executivos:** Se os indicadores de produtividade demonstram que o método atual é ineficiente ou gera muito desperdício, o BI fornece subsídios para simular e adotar novas metodologias construtivas (como o uso de pré-moldados ou alteração de fornecedores de sistemas de fôrmas) antes que o erro se propague para as próximas etapas.
 > * **Redistribuição de Recursos:** Através da análise dos histogramas, o gestor pode identificar equipes ociosas em frentes de serviço secundárias e realocar esses profissionais para reforçar o caminho crítico da obra, evitando multas contratuais por atraso.
 > * **Replanejamento da Obra:** Quando os desvios são identificados como irreversíveis na linha de base original, o BI facilita a criação de um replanejamento (nova linha de base). Isso permite ajustar o fluxo de caixa, readequar estratégias de fornecimento e alinhar as expectativas com os stakeholders e clientes de forma transparente e baseada em dados.
 >
@@ -648,17 +655,17 @@ A resposta apresentou diversos indicadores e recursos que podem ser utilizados n
 
 ### Fontes utilizadas
 
-> Acadbi
+> [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
 >
-> Curso de gerenciamento de obras
+> [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
 >
-> Tecnologia como apoio ao planejamento
+> [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
 >
-> Tcc aplicação
+> [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
 >
-> Live power bi
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Aplicação bi e analytics
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 
 ---
 
@@ -692,7 +699,7 @@ A resposta apresentou diversos indicadores e recursos que podem ser utilizados n
 > * **Padronização de Nomenclatura:** Garantir que colunas como "Quantidade" ou "Preço Unitário" tenham nomes idênticos em diferentes fontes para permitir o reaproveitamento de dashboards.
 > * **Tratamento de Hierarquias (EAP):** Ajuste de códigos de estrutura analítica (ex: remover pontos de códigos como "1.1.2") para que o BI reconheça corretamente os níveis de serviço no orçamento.
 > * **Dinamização (Unpivot):** Transformar planilhas onde os meses estão em colunas separadas em uma estrutura de linhas, facilitando a criação de análises temporais e Curvas S.
-> * **Correção de Inconsistências:** Identificação e exclusão de erros de preenchimento manual no ERP, como corretores duplicados ou despesas lançadas em categorias erradas.
+> * **Correção de Inconsistências:** Identificação e exclusão de erros de preenchimento manual no ERP, como registros duplicados ou despesas lançadas em categorias erradas.
 >
 > **6. Carga (Load)**
 >
@@ -706,17 +713,17 @@ A resposta apresentou diversos indicadores e recursos que podem ser utilizados n
 
 ### Fontes
 
-> Aplicação bi e analytics
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Dashboard com storytelling
+> [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
 >
-> Power bi fundamentals
+> [Documentação de introdução do Power BI](./power-bi-fundamentals.zip)
 >
-> Análise do power bi como ferramenta de gerenciamento
+> [Análise do Power BI como ferramenta de gerenciamento de obras](./AN%C3%81LISE%20DO%20POWER%20BI%20COMO%20FERRAMENTA%20DE%20GERENCIAMENTO.pdf)
 >
-> Vídeo como praticar bi
+> [Video: Como praticar Power BI na construção Civil](https://www.youtube.com/watch?v=7R41zHYjX-g)
 >
-> Curso gerenciamento
+> [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
 
 ### Problema identificado na resposta
 
@@ -747,7 +754,7 @@ A resposta apresentou de forma detalhada as etapas de extração, transformaçã
 > Para determinar a origem mais confiável e tratar inconsistências, o BI adota os seguintes critérios:
 >
 > * **Unificação em Repositório Único:** O objetivo fundamental é centralizar os dados em um Data Warehouse (DW) ou Data Mart, criando uma "única fonte da verdade" e eliminando discussões em reuniões sobre qual planilha está correta.
-> * **Tratamento de Inconsistências e Duplicidade:** Através de filtros e recursos visuais no Power Query, é possível localizar erros de preenchimento manual no ERP, como corretores duplicados ou despesas lançadas em categorias erradas. O comando de "Remover Duplicadas" é essencial para evitar a inflação artificial de custos.
+> * **Tratamento de Inconsistências e Duplicidade:** Através de filtros e recursos visuais no Power Query, é possível localizar erros de preenchimento manual no ERP, como registros duplicados ou despesas lançadas em categorias erradas. O comando de "Remover Duplicadas" é essencial para evitar a inflação artificial de custos.
 > * **Dados Ausentes ou Nulos:** Durante a limpeza, linhas nulas ou totais de planilhas (que causariam duplicidade na soma final) devem ser filtradas e removidas para não corromper os indicadores.
 >
 > **3. Influência na Confiabilidade dos Dashboards**
@@ -762,23 +769,23 @@ A resposta apresentou de forma detalhada as etapas de extração, transformaçã
 
 ### Fontes utilizadas
 
-> acadbi
+> [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
 >
-> o que é data Warehouse
+> [O que é Data Warehouse?](https://www.sap.com/brazil/resources/what-is-a-data-warehouse)
 >
-> Aplicação bi e analytics
+> [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
 >
-> Live
+> [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 >
-> Excel intermediario
+> [Excel Intermediário e Introdução ao Power BI](./EXCEL%20INTERMEDIARIO.pdf)
 >
-> Dashboard com storytelling
+> [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
 >
-> Power bi fundamentals
+> [Documentação de introdução do Power BI](./power-bi-fundamentals.zip)
 >
-> Vídeo como praticar bi
+> [Video: Como praticar Power BI na construção Civil](https://www.youtube.com/watch?v=7R41zHYjX-g)
 >
-> Curso gerenciamento
+> [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
 
 ---
 
@@ -794,7 +801,7 @@ A resposta apresentou de forma detalhada as etapas de extração, transformaçã
 >
 > Veja como essa estrutura integra as áreas citadas e contribui para a inteligência de negócios:
 >
-> **8. Integração e Organização de Dados por Área**
+> **1. Integração e Organização de Dados por Área**
 >
 > O Data Warehouse permite reunir elementos de dados apropriados de diversas fontes em um ambiente integral:
 >
@@ -802,7 +809,7 @@ A resposta apresentou de forma detalhada as etapas de extração, transformaçã
 > - **Planejamento e Execução:** Consolida cronogramas e marcos contratuais, permitindo cruzar as datas previstas com o avanço físico real registrado em diários de obra ou planilhas de medição.
 > - **Medições:** Armazena o histórico de serviços executados e liberados para pagamento, conectando-os diretamente ao custo orçado para cada etapa.
 >
-> **9. O Processo de Preparação (ETL e Modelagem)**
+> **2. O Processo de Preparação (ETL e Modelagem)**
 >
 > Para que os dados sejam úteis no DW, eles passam pelo processo de ETL (Extração, Transformação e Carga):
 >
@@ -810,7 +817,7 @@ A resposta apresentou de forma detalhada as etapas de extração, transformaçã
 > - **Transformação:** Os dados são limpos, validados e padronizados para garantir que informações de diferentes setores (que podem usar nomenclaturas distintas) se encaixem de maneira consistente.
 > - **Carga e Modelagem:** A informação é carregada no DW utilizando estruturas como o Star Schema (Esquema em Estrela), que organiza os dados em "tabelas fato" (eventos como uma medição realizada) e "tabelas dimensão" (contexto como a obra, o fornecedor ou a data).
 >
-> **10. Contribuição para a Solução de Business Intelligence**
+> **3. Contribuição para a Solução de Business Intelligence**
 >
 > A existência de um Data Warehouse é a espinha dorsal para um BI bem-sucedido na construção civil pelos seguintes motivos:
 >
@@ -823,12 +830,12 @@ A resposta apresentou de forma detalhada as etapas de extração, transformaçã
 >
 > **Fontes**
 >
-> - O que é data
-> - Acadbi
-> - Curso gerenciamento
-> - Tecnologia como apoio
-> - Aplicação bi e ana
-> - Dashboard
+> - [O que é Data Warehouse?](https://www.sap.com/brazil/resources/what-is-a-data-warehouse)
+> - [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
+> - [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
+> - [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
+> - [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
+> - [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
 
 ### Problema identificado na resposta
 
@@ -875,16 +882,15 @@ A resposta apresentou adequadamente a função do Data Warehouse e sua relação
 >
 > **Fontes utilizadas**
 >
-> - O que é data
-> - Video como praticar
-> - Acadbi
-> - Curso gerenciamento
-> - Tecnologia como apoio
-> - Aplicação bi e ana
-> - Dashboard
-> - Tcc
-> - live
-l
+> - [O que é Data Warehouse?](https://www.sap.com/brazil/resources/what-is-a-data-warehouse)
+> - [Video: Como praticar Power BI na construção Civil](https://www.youtube.com/watch?v=7R41zHYjX-g)
+> - [Introdução ao Business Intelligence](./AcadBI-Modulo1.pdf)
+> - [Gerenciamento de obras](./Aula-1_12.05.2020-Curso-Gerenciamento-de-Obras-.pdf)
+> - [A tecnologia como apoio ao planejamento e controle de uma obra](./TECNOLOGIA%20COMO%20APOIO%20AO%20PLANEJAMENTO....pdf)
+> - [Aplicação do Business Intelligence and Analytics na construção civil: estudo de caso em uma incorporadora de Goiânia-GO](./Aplica%C3%A7%C3%A3o%20do%20Business%20Intelligence%20and%20Analytics%20na%20constru%C3%A7%C3%A3o%20civil.pdf)
+> - [Dashboard com Power BI](./DASHBOARD%20COM%20STORYTELLING.pdf)
+> - [Aplicação do Power BI em gerenciamento de projetos](./TCC%20Aplicac%CC%A7a%CC%83o%20do%20Power%20BI%20em%20gerenciamento_Joselito%20C%C3%A1ssio%20Sout.pdf)
+> - [Video: Power BI para construção Civil](https://www.youtube.com/watch?v=LKa_tH3zO7g)
 
 ---
 
